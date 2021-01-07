@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root{
+    font-size: 16px;
+    font-family: Montserrat;
+    --logo-ratio: calc(2337/837);
+    --logo-height: 18rem;
+    --logo-width: calc(var(--logo-ratio) * var(--logo-height));
+    --scrollbar-width: 0.5rem
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 300vh;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    color: white;
+}
+
+body::-webkit-scrollbar{
+    width: var(--scrollbar-width);
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #00000000;
+    border-radius: calc(var(--scrollbar-width) / 2);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #0000006c;
+    border-radius: calc(var(--scrollbar-width) / 2);
+}
+
+.header{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        0turn,
+        #000000,
+        #00000000 50% 
+    );
+}
+
+.header h2{
+    margin: 0;
+    padding: 0;
+}
+
+img.logo{
+    transition: 1000ms;
+    width: var(--logo-width);
+    height: var(--logo-height);
+  }
+
+img.logo:hover{
+    width: calc(var(--logo-width) + 2rem * var(--logo-ratio));
+    height: calc(var(--logo-height) + 2rem);
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    height: 4rem;
+    background: linear-gradient(
+        0.25turn,
+        #000000 25%,
+        #ffffff00 25%,
+        #ffffff00 75%,
+        #000000 75%
+    );
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} 
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+        #000000,
+        #ffffff00 20%,
+        #ffffff00 80%,
+        #000000
+    );
+}
+
+.navitem{
+    background-color: black;
+    position: relative;
+    width: calc(90vw / 3);
+    margin: 0 1px;
+    height: 4rem;
+    text-align: center;
+}
+
+.navitem:first-child{
+    margin-left: 0;
+}
+
+.navitem:last-child{
+    margin-right: 0;
+}
+
+.navitem a{
+    position: relative;
+    top: 1.5rem;
+}
