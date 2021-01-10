@@ -8,7 +8,6 @@
     --logo-heigth: calc(var(--logo-ratio) * var(--logo-width));
     --scrollbar-width: 0.3rem;
     --navbar-height: 4rem;
-    --image-width: 50%;
 }
 
 html{
@@ -147,7 +146,9 @@ li a{
 
 .article .subject{
     display: flex;
-    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .article img{
@@ -169,7 +170,7 @@ li a{
     width: calc(100% - 40vw - 12rem);
     text-align: center;
     margin: 2rem;
-    display: inline-block;
     position: relative;
+    height: min-content;
     
 }
