@@ -6,7 +6,9 @@
     --logo-ratio: calc(2337/837);
     --logo-width: 62vw;
     --logo-heigth: calc(var(--logo-ratio) * var(--logo-width));
-    --scrollbar-width: 0.5rem
+    --scrollbar-width: 0.3rem;
+    --navbar-height: 4rem;
+    --image-width: 50%;
 }
 
 html{
@@ -17,11 +19,9 @@ html{
 body{
     margin: 0;
     padding: 0;
-    height: 300vh;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(8px);
+    background-size: 100vw 100vh;
     color: white;
 }
 
@@ -30,12 +30,11 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-track{
-    background-color: #00000000;
-    border-radius: calc(var(--scrollbar-width) / 2);
+    background-color: #000000;
 }
 
 body::-webkit-scrollbar-thumb{
-    background: #0000006c;
+    background: #464209c7;
     border-radius: calc(var(--scrollbar-width) / 2);
 }
 
@@ -84,7 +83,7 @@ li a{
     position: sticky;
     top: 0;
     margin: 0;
-    height: 4rem;
+    height: var(--navbar-height);
     background: linear-gradient(
         0.25turn,
         #000000 25%,
@@ -95,16 +94,17 @@ li a{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    z-index: 10;
 } 
 
 .navbar ul{
     display: flex;
     justify-content: center;
     background: linear-gradient(
-        #000000,
-        #ffffff00 20%,
-        #ffffff00 80%,
-        #000000
+        #000000 20%,
+        #ffffff 40%,
+        #ffffff 60%,
+        #000000 80%
     );
 }
 
@@ -113,7 +113,7 @@ li a{
     position: relative;
     width: calc(90vw / 3);
     margin: 0 1px;
-    height: 4rem;
+    height: var(--navbar-height);
     text-align: center;
 }
 
@@ -127,5 +127,49 @@ li a{
 
 .navitem a{
     position: relative;
-    top: 1.5rem;
+    top: calc((var(--navbar-height) - 1rem) / 2);
+}
+
+
+.main{
+    padding-top: 2rem;
+    background: black;
+    min-height: 100vh;
+}
+
+.article{
+    width: calc(100vw - 4rem);
+    border-top: white 1px solid;
+    position: relative;
+    margin: 2rem 2rem 0 2rem;
+    padding-bottom: 2rem;
+}
+
+.article .subject{
+    display: flex;
+    vertical-align: middle;
+}
+
+.article img{
+    vertical-align: text;
+    margin: 2rem;
+    max-height: 70vh;
+    max-width: 40vw;
+    width: auto;
+    height: auto;
+}
+
+.article h3{
+    font-size: 2rem;
+    margin: 2.5rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.article p{
+    width: calc(100% - 40vw - 12rem);
+    text-align: center;
+    margin: 2rem;
+    display: inline-block;
+    position: relative;
+    
 }
