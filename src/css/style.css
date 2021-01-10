@@ -59,7 +59,7 @@ img.logo{
     transition: 1000ms;
     width: var(--logo-width);
     height: var(--logo-height);
-  }
+}
 
 img.logo:hover{
     width: calc(var(--logo-width) + 2rem * var(--logo-ratio));
@@ -129,7 +129,6 @@ li a{
     top: calc((var(--navbar-height) - 1rem) / 2);
 }
 
-
 .main{
     padding-top: 2rem;
     background: black;
@@ -172,5 +171,13 @@ li a{
     margin: 2rem;
     position: relative;
     height: min-content;
-    
+}*
+
+.article .link{
+    color: #0040b8;
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
 }
