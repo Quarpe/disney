@@ -1,3 +1,5 @@
+/* Ficher créé par Camille Rouzaud */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 :root{
@@ -33,7 +35,7 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-    background: #464209c7;
+    background: #f0ff6a;
     border-radius: calc(var(--scrollbar-width) / 2);
 }
 
@@ -125,8 +127,14 @@ li a{
 }
 
 .navitem a{
+    transition: 200ms;
     position: relative;
     top: calc((var(--navbar-height) - 1rem) / 2);
+}
+
+.navitem a:hover{
+    text-shadow: white 0 0 .5rem ;
+    color: #f0ff6a;
 }
 
 .main{
@@ -173,11 +181,20 @@ li a{
     height: min-content;
 }*
 
-.article .link{
+.link{
     color: #0040b8;
     text-decoration: underline;
 }
 
-.italic {
-    font-style: italic;
+.footer{
+    border-top: #0040b8 1px solid;
+    margin: 0;
+    padding: 0;
+    background-color: #090f1a;
+}
+
+.footer p{
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem 0;
 }
