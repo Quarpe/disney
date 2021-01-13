@@ -1,0 +1,23 @@
+/* Fiche créée par Linda */
+body {
+    background-color : #ADD8E6 ;
+}
+h1 {
+   font-family:Comic Sans MS,
+         SunSans-Regular, sans-serif }
+
+q{
+   background: black;
+   margin: 0.5em 0;
+   padding: 0.3em;
+   border-right: 1em solid black }
+
+h1 { text-align: center }
+
+q a {
+   text-decoration: none }
+
+a:link {
+   color: white }
+a:visited {
+   color: white }
