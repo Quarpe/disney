@@ -1,0 +1,38 @@
+/*Cette feuille a été créer par Pauline*/
+
+body
+{
+    background-image: url("../images/fond d'ecran.jpg");
+	background-attachment: scroll;/*pour faire en sorte que le fond d'écran descende en même temps que l'on scroll*/
+	color: white;
+	font-family:Trebuchet MS;
+}
+p
+{
+	font-size: 20px;
+	width: 	1200px;/*pour choisir la place que prendront les paragraphes par rapport à la droite de la page*/
+	padding: 20px;
+	margin: 20px;
+}
+h1
+{
+    font-size: 60px;
+	text-align: center;
+}
+
+h2
+{
+    font-size: 40px;
+	margin: 50px;
+}
+
+h3
+{
+    font-size: 30px; 
+	margin: 70px;
+}
+
+#date
+{
+	text-decoration: underline;/*pour souligner les dates*/
+}
